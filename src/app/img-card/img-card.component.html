@@ -1,0 +1,28 @@
+<!--Card-->
+<div class="card card-cascade wider reverse my-4">
+
+  <!--Card image-->
+  <div class="view overlay hm-white-slight waves-light" mdbRippleRadius>
+      <img src="{{ src }}" class="img-fluid">
+      <a>
+          <div class="mask"></div>
+      </a>
+  </div>
+  <!--/Card image-->
+
+  <!--Card content-->
+  <div class="card-body text-center">
+      <!--Title-->
+      <h4 class="card-title"><strong>Stupid Cats</strong></h4>
+      <h5 class="green-text"><strong>Random Cats with a Click</strong></h5>
+      <button type="button" class="btn btn-outline-teal" mdbRippleRadius (click)="generateSrc()">{{ button.text }}</button>
+
+      <p class="card-text">Check out these silly critters.....
+      </p>
+
+  </div>
+  <!--/.Card content-->
+  
+
+</div>
+<!--/.Card-->
