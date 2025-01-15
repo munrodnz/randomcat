@@ -13,7 +13,7 @@
     "curly": true,
     "deprecation": {
       "severity": "warn"
-    },
+    ],
     "eofline": true,
     "forin": true,
     "import-blacklist": [
@@ -138,6 +138,12 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-inputs-metadata-property": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true
   }
 }
