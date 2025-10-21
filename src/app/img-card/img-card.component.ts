@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { log } from 'util';
 
-class CatImage {
+interface CatImage {
   format: string;
   api: string;
   results_per_page: number;
 }
 
-class Button {
+interface Button {
   text: string;
   disabled: boolean;
   color: string;
@@ -16,7 +15,8 @@ class Button {
 @Component({
   selector: 'app-img-card',
   templateUrl: './img-card.component.html',
-  styleUrls: ['./img-card.component.scss']
+  styleUrls: ['./img-card.component.scss'],
+  standalone: false
 })
 
 export class ImgCardComponent implements OnInit {
@@ -33,7 +33,7 @@ export class ImgCardComponent implements OnInit {
     disabled: false
   };
 
-  public src: string;
+  public src: string = '';
 
   constructor() { }
 
